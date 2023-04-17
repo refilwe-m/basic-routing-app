@@ -8,21 +8,21 @@ export const Dashboard = () => {
     <section>
       <h1>Dashboard</h1>
       <Routes>
-        <Route path="/" element={<h3>Dashboard Home</h3>} />
+        {/* <Route path="/" element={<h3>Dashboard Home</h3>} /> */}
         <Route
-          path="test"
+          path="side"
           element={
             <SideModal
               isOpen={true}
               onClose={() => {
-                navigate("./");
+                navigate(".");
               }}
             />
           }
         />
       </Routes>
       <button>
-        <Link to="test">Open Side Modal</Link>
+        <Link to="side">Open Side Modal</Link>
       </button>
     </section>
   );
