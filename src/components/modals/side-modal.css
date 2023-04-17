@@ -1,0 +1,24 @@
+.side-modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -100%;
+    width: 300px;
+    background-color: #fff;
+    z-index: 999;
+    transition: all 0.3s ease-in-out;
+}
+
+.side-modal.open {
+    right: 0;
+}
+
+.side-modal-content {
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .side-modal {
+        width: 100%;
+    }
+}
